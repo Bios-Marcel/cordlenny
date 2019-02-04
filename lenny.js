@@ -1,4 +1,5 @@
 function onMessageSend(message) {
-    message = message.replace(";lennyface;", "( ͡° ͜ʖ ͡°)");
-    return message.replace(";lenny;", "( ͡° ͜ʖ ͡°)");
+    return message
+        .split(";lennyface;").join("( ͡° ͜ʖ ͡°)")
+        .split(";lenny;").join("( ͡° ͜ʖ ͡°)");
 }
